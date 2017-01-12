@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		 <meta name="viewport" content="width=device-width" />
+         <link rel="stylesheet" type="text/css" href="iotisep.css" />
+                 <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+         <!--[if lt IE 9]>
+        <script src="html5shiv.js"></script>
+        <![endif]-->
+        <!--[if lte IE 7]>
+        <link rel="stylesheet" href="style_ie.css" />
+        <![endif]-->
+		<title>IoT Simulation-ISEP</title>
+	</head>
+	<body>
+		<div id="main_wrapper">
+			<header>
+				<div id="main_title">
+					<h1>Welcome to ISEP IoT Dashboard Monitoring</h1>
+					<div>
+						<p>
+							<img src=""><img src=""><img src="">
+						</p>
+					</div>
+					<div id="the_team">
+						<h2>The IoT Project Team</h2>
+						<p>
+							<img src=""> Amri Adel - Technical Supervisor/ Consultant
+							<img src=""> Emmanuel Vivier - Academic Supervisor
+							<img src=""> Balaji Panini - Web Application 
+							<img src=""> Paul Arago - Web Application 
+							<img src=""> Chima Nmerenu - Web Application 
+							<img src=""> Patrick Matta - Microcontroller 
+							<img src=""> Raj Vorer - Microcontroller
+						</p>
+					</div>					
+				</div>
+			</header>
+
+			<section>
+				<div id="dashboard_summary">
+					<h2>Dashboard Summary</h2>
+					<div>
+						<table>
+							<caption>Water Leakage</caption>
+							<thead>
+								<tr>
+									<th>Device Name</th>
+									<th>ID</th>
+									<th>Pointer</th>
+									<th>Type</th>
+									<th>Status</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Sensor A</td>
+									<td><a href="#WLH001">WLH001</a> </td>
+									<td><img src=""></td>
+									<td>Humidity</td>
+									<td>OK/Leakage Eminent/Leakage Detected</td>
+								</tr>
+
+								<tr>
+									<td>Sensor B</td>
+									<td><a href="#WLH002">WLH002</a> </td>
+									<td><img src=""></td>
+									<td>Humidity</td>
+									<td>OK/Leakage Eminient/Leakage Detected</td>
+								</tr>
+
+								<tr>
+									<td>Sensor C</td>
+									<td><a href="#WLH003">WLH003</a> </td>
+									<td><img src=""></td>
+									<td>Humidity</td>
+									<td>OK/Leakage Eminient/Leakage Detected</td>
+								</tr>
+							</tbody>
+						</table>
+						<p>Click on device ID to see device details</p>
+					</div>
+				</div>
+			</section>
+
+			<aside>
+				<div id="map">
+						Google map shows here with pointer locations
+				</div>	
+			</aside>
+
+			<section>
+				<div id="Devices">
+					<div id="WLH001">
+						<div id="WLH001_details">
+							<table>
+								<caption>Sensor A, 5 last updates</caption>
+								<thead>
+									<tr>
+										<th>Date</th>
+										<th>Time</th>
+										<th>Measured Value</th>
+										<th>Threshold Value</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Date</td>
+										<td>Time1</td>
+										<td>7</td>
+										<td>4</td>
+										<td>Leakage Detected</td>
+									</tr>
+
+									<tr>
+										<td>Date</td>
+										<td>Time2</td>
+										<td>5</td>
+										<td>4</td>
+										<td>Leakage Detected</td>
+									</tr>
+
+									<tr>
+										<td>Date</td>
+										<td>time3</td>
+										<td>3</td>
+										<td>4</td>
+										<td>Leakage Eminient</td>
+									</tr>
+									<tr>
+										<td>Date</td>
+										<td>time3</td>
+										<td>1</td>
+										<td>4</td>
+										<td>OK</td>
+									</tr>
+									<tr>
+										<td>Date</td>
+										<td>time3</td>
+										<td>0</td>
+										<td>4</td>
+										<td>OK</td>
+									</tr>
+								</tbody>
+							</table>
+							<a href="#dashboard_summary">Go Back to Summary</a> 
+						</div>
+					</div>
+
+					<div id="WLH002">
+						<div id="WLH002_details">
+							<table>
+								<caption>Sensor B, 5 last updates</caption>
+								<thead>
+									<tr>
+										<th>Date</th>
+										<th>Time</th>
+										<th>Measured Value</th>
+										<th>Threshold Value</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Date</td>
+										<td>Time1</td>
+										<td>7</td>
+										<td>4</td>
+										<td>Leakage Detected</td>
+									</tr>
+
+									<tr>
+										<td>Date</td>
+										<td>Time2</td>
+										<td>5</td>
+										<td>4</td>
+										<td>Leakage Detected</td>
+									</tr>
+
+									<tr>
+										<td>Date</td>
+										<td>time3</td>
+										<td>3</td>
+										<td>4</td>
+										<td>Leakage Eminient</td>
+									</tr>
+									<tr>
+										<td>Date</td>
+										<td>time3</td>
+										<td>1</td>
+										<td>4</td>
+										<td>OK</td>
+									</tr>
+									<tr>
+										<td>Date</td>
+										<td>time3</td>
+										<td>0</td>
+										<td>4</td>
+										<td>OK</td>
+									</tr>
+								</tbody>
+							</table>
+							<a href="#dashboard_summary">Go Back to Summary</a> 
+						</div>
+					</div>
+
+					<div id="WLH003">
+						<div id="WLH003_details">
+							<table>
+								<caption>Sensor C, 5 last updates</caption>
+								<thead>
+									<tr>
+										<th>Date</th>
+										<th>Time</th>
+										<th>Measured Value</th>
+										<th>Threshold Value</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Date</td>
+										<td>Time1</td>
+										<td>7</td>
+										<td>4</td>
+										<td>Leakage Detected</td>
+									</tr>
+
+									<tr>
+										<td>Date</td>
+										<td>Time2</td>
+										<td>5</td>
+										<td>4</td>
+										<td>Leakage Detected</td>
+									</tr>
+
+									<tr>
+										<td>Date</td>
+										<td>time3</td>
+										<td>3</td>
+										<td>4</td>
+										<td>Leakage Eminient</td>
+									</tr>
+									<tr>
+										<td>Date</td>
+										<td>time3</td>
+										<td>1</td>
+										<td>4</td>
+										<td>OK</td>
+									</tr>
+									<tr>
+										<td>Date</td>
+										<td>time3</td>
+										<td>0</td>
+										<td>4</td>
+										<td>OK</td>
+									</tr>
+								</tbody>
+							</table>
+							<a href="#dashboard_summary">Go Back to Summary</a> 
+						</div>
+					</div>
+				</div>
+
+			</section>
+			<aside>
+				<article>
+					<h2>Now here's the story...</h2>
+					<p>
+					 	<h3>Physical Architecture:</h3>
+					 	3 sensors A, B and C measure the humidity of their locations. <br />
+						We have these sensors and locations pre-registered on our platform.
+						The measured data is processed and sent to a cloud server via wifi 
+						using microcontroller. <br />
+						This dashboard then displays these measured data as well as 
+						computes the status of the sensor based on our monitoring algorithm: <br />
+						<ul>
+							<li>Far below a pre-set threshold value, status is ok.</li>
+							<li>Close to the threshold, status is leakage eminent.</li>
+							<li>Equal and above the threshold value, leakage is detected.</li>
+						</ul>  <br/>		
+						This dashboard also fields a map of the locations of our sensors. <br />
+						<ul>
+							<li><em>Red</em> indicates leakage detected status.</li>
+							<li><em>Yellow</em> indicates leakage eminent status.</li>
+							<li><em>Green</em> indicates OK status. </li>
+						</ul> <br /> <br />
+										
+						The application works in real time. Data is refreshed every 5 minutes
+					</p>
+				</article>
+			</aside>
+
+			<footer>
+				<div id="thanks">
+					<p>
+						<h2> Thanks</h2> <br />
+						We appreciate all contributions made towards this project. 
+					</p>
+				</div>
+
+				<div id="challenges">
+					<p>
+						<h2>Challenges faced</h2> <br />
+						Initial objective was to demonstrate using a long range IoT network like LoRa. <br />
+						However, due to budget challenges, we have adjusted to make this demonstration using wifi.<br />
+						This is although functional, it is not practical to depend on or use wifi connectivity in the field. <br />
+						Dashboard application is static to 3 sensors already pre-set.   
+					</p>
+				</div>
+
+				<div id="recommendation">
+					<p>
+						<h2>Recommendations</h2> <br />
+						We recommend further refinement on this project.<br />
+						<strong>A few points for improvement:</strong> <br />
+						<ol>
+							<li>Implement on Long Range, Low Power Wide Area Network.</li>
+							<li>Dashboard to be made interactive so we can add more sensors and retrieve their data too </li>
+						</ol>
+					</p>
+				</div>
+				
+			</footer>
+			
+		</div>
+	</body>
+</html>
