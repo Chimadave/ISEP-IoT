@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="utf-8" />
 		 <meta name="viewport" content="width=device-width" />
-         <link rel="stylesheet" type="text/css" href="iotisep.css" />
+		 <link rel="stylesheet" type="text/css" href="iotisep.css" />
+         
                  <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
@@ -17,24 +18,27 @@
 	</head>
 	<body>
 		<div id="main_wrapper">
+		<h1>Welcome to ISEP IoT Sensor Monitoring Dashboard </h1>
 			<header>
 				<div id="main_title">
-					<h1>Welcome to ISEP IoT Dashboard Monitoring</h1>
-					<div>
+					<div id="logos">
+					<img src="logo.png" class="logo" alt="">
 						<p>
-							<img src=""><img src=""><img src="">
+							<img src="iot1.jpg" alt=""><img src="iot2.jpg" alt=""><img src="iot3.jpg" alt="">
 						</p>
 					</div>
 					<div id="the_team">
 						<h2>The IoT Project Team</h2>
 						<p>
-							<img src=""> Amri Adel - Technical Supervisor/ Consultant
-							<img src=""> Emmanuel Vivier - Academic Supervisor
-							<img src=""> Balaji Panini - Web Application 
-							<img src=""> Paul Arago - Web Application 
-							<img src=""> Chima Nmerenu - Web Application 
-							<img src=""> Patrick Matta - Microcontroller 
-							<img src=""> Raj Vorer - Microcontroller
+							<ul>
+								<li>Amri Adel - Technical Supervisor/ Consultant </li>
+								<li>Emmanuel Vivier - Academic Supervisor </li>
+								<li>Balaji Panini - Web Application</li>
+								<li>Paul Arago - Web Application</li>
+								<li>Chima Nmerenu - Web Application</li>
+								<li>Patrick Matta - Microcontroller </li>
+								<li>Raj Vorer - Microcontroller </li>
+							</ul>
 						</p>
 					</div>					
 				</div>
@@ -43,57 +47,54 @@
 			<section>
 				<div id="dashboard_summary">
 					<h2>Dashboard Summary</h2>
-					<div>
+					<div id="sum_table">
 						<table>
-							<caption>Water Leakage</caption>
+							<caption>Water Leakage Sensors</caption>
 							<thead>
 								<tr>
 									<th>Device Name</th>
 									<th>ID</th>
-									<th>Pointer</th>
-									<th>Type</th>
+									<th>Sensor Type</th>
 									<th>Status</th>
+									<th>Marker</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
 									<td>Sensor A</td>
 									<td><a href="#WLH001">WLH001</a> </td>
-									<td><img src=""></td>
 									<td>Humidity</td>
-									<td>OK/Leakage Eminent/Leakage Detected</td>
+									<td>Leakage Detected</td>
+									<td><img src="red_marker.png" /></td>
 								</tr>
 
 								<tr>
 									<td>Sensor B</td>
 									<td><a href="#WLH002">WLH002</a> </td>
-									<td><img src=""></td>
 									<td>Humidity</td>
-									<td>OK/Leakage Eminient/Leakage Detected</td>
+									<td>Leakage Eminent</td>
+									<td><img src="yellow_marker.png" alt="" /></td>
 								</tr>
 
 								<tr>
 									<td>Sensor C</td>
 									<td><a href="#WLH003">WLH003</a> </td>
-									<td><img src=""></td>
 									<td>Humidity</td>
-									<td>OK/Leakage Eminient/Leakage Detected</td>
+									<td>OK</td>
+									<td><img src="green_marker.png" alt="" /></td>
 								</tr>
 							</tbody>
 						</table>
 						<p>Click on device ID to see device details</p>
 					</div>
 				</div>
-			</section>
-
-			<aside>
-				<div id="map">
-						Google map shows here with pointer locations
+				<div id="map_canvas">
+				
 				</div>	
-			</aside>
+			</section>	
 
-			<section>
-				<div id="Devices">
+			<div id="Devices">
+				<h2>Sensor data details</h2>
 					<div id="WLH001">
 						<div id="WLH001_details">
 							<table>
@@ -129,7 +130,7 @@
 										<td>time3</td>
 										<td>3</td>
 										<td>4</td>
-										<td>Leakage Eminient</td>
+										<td>Leakage Eminent</td>
 									</tr>
 									<tr>
 										<td>Date</td>
@@ -147,9 +148,9 @@
 									</tr>
 								</tbody>
 							</table>
-							<a href="#dashboard_summary">Go Back to Summary</a> 
-						</div>
+						<a href="#dashboard_summary">Go Back to Summary</a> <br />
 					</div>
+				</div>
 
 					<div id="WLH002">
 						<div id="WLH002_details">
@@ -204,7 +205,7 @@
 									</tr>
 								</tbody>
 							</table>
-							<a href="#dashboard_summary">Go Back to Summary</a> 
+							<a href="#dashboard_summary">Go Back to Summary</a> <br />
 						</div>
 					</div>
 
@@ -243,7 +244,7 @@
 										<td>time3</td>
 										<td>3</td>
 										<td>4</td>
-										<td>Leakage Eminient</td>
+										<td>Leakage Eminent</td>
 									</tr>
 									<tr>
 										<td>Date</td>
@@ -266,15 +267,13 @@
 					</div>
 				</div>
 
-			</section>
-			<aside>
 				<article>
 					<h2>Now here's the story...</h2>
 					<p>
 					 	<h3>Physical Architecture:</h3>
 					 	3 sensors A, B and C measure the humidity of their locations. <br />
 						We have these sensors and locations pre-registered on our platform.
-						The measured data is processed and sent to a cloud server via wifi 
+						The measured data is processed and sent to a server via wifi 
 						using microcontroller. <br />
 						This dashboard then displays these measured data as well as 
 						computes the status of the sensor based on our monitoring algorithm: <br />
@@ -282,30 +281,29 @@
 							<li>Far below a pre-set threshold value, status is ok.</li>
 							<li>Close to the threshold, status is leakage eminent.</li>
 							<li>Equal and above the threshold value, leakage is detected.</li>
-						</ul>  <br/>		
+						</ul> 		
 						This dashboard also fields a map of the locations of our sensors. <br />
 						<ul>
 							<li><em>Red</em> indicates leakage detected status.</li>
 							<li><em>Yellow</em> indicates leakage eminent status.</li>
 							<li><em>Green</em> indicates OK status. </li>
-						</ul> <br /> <br />
+						</ul> 
 										
 						The application works in real time. Data is refreshed every 5 minutes
 					</p>
 				</article>
-			</aside>
-
+			
 			<footer>
 				<div id="thanks">
+					<h2> Thanks</h2>
 					<p>
-						<h2> Thanks</h2> <br />
 						We appreciate all contributions made towards this project. 
 					</p>
 				</div>
 
 				<div id="challenges">
+					<h2>Challenges faced</h2>
 					<p>
-						<h2>Challenges faced</h2> <br />
 						Initial objective was to demonstrate using a long range IoT network like LoRa. <br />
 						However, due to budget challenges, we have adjusted to make this demonstration using wifi.<br />
 						This is although functional, it is not practical to depend on or use wifi connectivity in the field. <br />
@@ -314,10 +312,10 @@
 				</div>
 
 				<div id="recommendation">
+					<h2>Recommendations</h2>
 					<p>
-						<h2>Recommendations</h2> <br />
 						We recommend further refinement on this project.<br />
-						<strong>A few points for improvement:</strong> <br />
+						<strong>A few points for improvement:</strong>
 						<ol>
 							<li>Implement on Long Range, Low Power Wide Area Network.</li>
 							<li>Dashboard to be made interactive so we can add more sensors and retrieve their data too </li>
@@ -328,5 +326,8 @@
 			</footer>
 			
 		</div>
+		<script type="text/javascript" src="iotisep.js" ></script>
+		<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+		 
 	</body>
 </html>

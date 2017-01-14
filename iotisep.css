@@ -1,0 +1,176 @@
+/* Defining Custom fonts */
+
+@font-face
+ {
+    font-family: 'BallparkWeiner';
+    src: url(ballpark.eot);
+    src: url(ballpark.eot?#iefix) format('embedded-opentype'),
+         url(ballpark.woff) format('woff'),
+         url(ballpark.ttf) format('truetype'),
+         url(ballpark.svg#BallparkWeiner) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family:'Dayrom';
+    src: url(dayrom.eot);
+    src: url(dayrom.eot?#iefix) format('embedded-opentype'),
+         url(dayrom.woff) format('woff'),
+         url(dayrom.ttf) format('truetype'),
+         url(dayrom.svg#Dayrom) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header
+{
+    background:url(whtbgg.png) repeat;
+}
+
+
+/* Defining the main styles of the page */
+body
+{
+    background: url('bgn.png');
+    font-family: 'Trebuchet MS' , Arial, sans-serif;
+    color: #181818;
+}
+
+#main_wrapper
+{
+    width: 1100px;
+    margin: auto;
+}
+
+footer h2
+{
+    font-family: 'Dayrom', serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+tr
+{
+    text-align: center;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+td ,th
+{
+    border: 1px solid purple;
+}
+
+#logos, #the_team
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#logos
+{
+    width: 68%;
+
+}
+
+#the_team
+{
+    width: 30%;
+    text-align: left;
+}
+
+h1
+{
+    text-align: center;
+    background:url('separator.png') repeat-x bottom;
+}
+
+#dashboard_summary, #map_canvas, #Devices, article
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#dashboard_summary, #Devices
+{
+    width: 50%;
+}
+
+section
+{
+background: url('separator.png') repeat-x top;
+height: 300px;
+}
+
+article
+{
+    width: 40%;
+    text-align: justify;
+}
+
+#thanks, #challenges, #recommendation
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+}
+
+footer h2
+{
+    font-size: 0.9em;
+}
+
+footer p , footer ol
+{
+    font-size: 0.8em;
+}
+
+footer
+{
+    background:url('separator.png') repeat-x top, url('shadow.png') repeat-x bottom;
+}
+
+#WLH003
+{
+    margin-bottom: 30px;
+}
+#WLH001, #WLH002
+{
+    margin-bottom: 20px;
+}
+
+em
+{
+    font-style: normal;
+    font-weight: bold;
+}
+
+.logo
+{
+    float: left;
+}
+
+#the_team ul
+{
+    list-style: none;
+}
+
+#dashboard_summary #sum_table table
+{
+    height: 180px;
+}
+
+#map_canvas
+{
+    height: 100%;
+    width: 40%;
+    text-align: left;
+    margin-left: 51px;
+    margin-top: 20px;
+    padding: 0px;
+}
